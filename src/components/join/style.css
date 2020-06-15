@@ -1,0 +1,64 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+header{
+    height:100vh;
+    width:100vw;
+    background-image: url("pic1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.main-header{
+    text-align:center;
+
+}
+@media (min-height:1000px) and (min-width:800px){
+    .main-header img{
+    
+        height:0vh;
+        width:0vw;
+    }
+}
+
+.main-header h1{
+    font-size: 3rem;
+    color:black;
+}
+.main-header img{
+    border-radius: 50%;
+    height:15vh;
+    width:15vw;
+}
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: black; 
+} 
+  
+.main-header input{
+    width:90%;
+    padding:1rem;
+    margin:20px 0px;
+    border:none;
+    border-bottom:1px solid black;
+    font-size: 2rem;
+  
+    background:transparent;
+    outline:none;
+    
+}
+.main-header button{
+    padding:1rem 3rem;
+    font-size:1.8rem;
+    background:#fff;
+    color: rgb(51, 27, 27);
+    border:none;
+    border-radius: 50px;
+
+}.main-header button:hover{
+    transform: scale(1.2);
+}
